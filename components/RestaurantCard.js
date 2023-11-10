@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
 import React from "react";
 import { MapPinIcon } from "react-native-heroicons/outline";
 import { StarIcon } from "react-native-heroicons/solid";
@@ -17,7 +17,7 @@ const RestaurantCard = ({
   lat,
 }) => {
   return (
-    <TouchableOpacity className="bg-white mr-3 shadow" >
+    <Pressable className="bg-white mr-3 boxShadow" >
       <Image
         source={{
           uri: urlFor(imgUrl).url(),
@@ -39,7 +39,7 @@ const RestaurantCard = ({
 </View>
 
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 

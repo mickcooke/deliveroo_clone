@@ -77,7 +77,7 @@ const HomeScreen = () => {
           <MagnifyingGlassIcon color="gray" size={20} />
           <TextInput
             placeholder="Restaurants and cuisines"
-            keyboardType="default"
+            inputMode="default"
           />
         </View>
 
